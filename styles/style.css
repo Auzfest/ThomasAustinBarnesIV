@@ -165,3 +165,51 @@ body {
     background: url('../images/');
 }
 }
+
+/* Contact Page */
+
+.contactContent {
+  display: grid;
+  flex-grow: 1;
+  height: 800px;
+}
+
+.gitColor {
+  grid-row: 1/2;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkColor {
+  grid-row: 1/2;
+  background: linear-gradient(to right, black 0%, white 10% 90%, rgb(38, 122, 60) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailColor {
+  grid-row: 1/2;
+  background: rgb(38, 122, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactImage {
+  width:50%;
+  object-fit: cover;
+}
+
+.contactImage:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
