@@ -3,6 +3,8 @@
     src: url('../fonts/Tektur_Condensed-Regular.ttf') format('truetype');
   }
 
+/*Index and Website*/
+
 body {
     font-family: 'Tektur', sans-serif;
     margin: 0;
@@ -57,7 +59,8 @@ body {
   
   .content {
     flex-grow: 1;
-    color: darkgray;
+    color: black;
+    text-align: center;
   }
   
   .project-list {
