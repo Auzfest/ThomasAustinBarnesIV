@@ -20,6 +20,8 @@ body {
     display: none;
     flex-direction: column;
     list-style: none;
+    border-right: white solid 5px;
+    padding: 1%;
   }
 
   .left-bar.open {
@@ -63,8 +65,6 @@ body {
   #menu.open::before {
     content: "X";
   }
-
-
   
   .navigation {
     display: none;
@@ -144,17 +144,20 @@ body {
     0% {
       background: url('../images/missionWeb.png');
   }
-  25% {
+  20% {
       background: url('../images/drawingWeb.png');
   }
-  50% {
+  40% {
       background: url('../images/quizWeb.png');
   }
-  75% {
+  60% {
       background: url('../images/M777.png');
   }
-  100% {
+  80% {
       background: url('../images/apollo11.png');
+  }
+  100% {
+    background: url('../images/missionWeb.png');
   }
   }
 
@@ -178,6 +181,82 @@ body {
 
 /*About Page*/
 
+.aboutcontent {
+  width: 100%;
+  flex-grow: 1;
+  color: black;
+  text-align: center;
+}
+
+.aboutcontent h1 {
+  font-size: 60px;
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.aboutcontent h2 {
+  font-size: 40px;
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.skillList {
+  display: grid;
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.aboutcontent li {
+  font-size: 20px;
+  padding: 2%;
+}
+
+.aboutcontent h3 {
+  font-size: 30px;
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.aboutcontent p {
+  font-size: 20px;
+  margin: 4rem;
+  color: white;
+  background-color: gray;
+  border-radius: 5%;
+  width: 20rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.persona {
+  width: 40%;
+  border: #000 solid 5px;
+  border-radius: 5%;
+}
+
+.aboutpic {
+  width: 40%;
+  border: #000 solid 5px;
+  border-radius: 5%;
+}
+
 .background2 {
   position: fixed;
   top: 0;
@@ -192,19 +271,13 @@ body {
 
 @keyframes parallaxScroll2 {
   0% {
-    background: url('../images/.png');
-}
-25% {
-    background: url('../images/.png');
+    background: url('../images/Austin1.jpeg');
 }
 50% {
-    background: url('../images/.png');
-}
-75% {
-    background: url('../images/');
+    background: url('../images/Austin2.jpeg');
 }
 100% {
-    background: url('../images/');
+    background: url('../images/Austin3.jpg');
 }
 }
 
