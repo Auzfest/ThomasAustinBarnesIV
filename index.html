@@ -11,24 +11,94 @@
   <button id="menu"></button>
   <div class="container">
     <div class="left-bar">
-      <img src="images/AustinBarnes.JPG" alt="Photo of Austin" class="profile-photo">
-      <p class="website-name">Austin's Website</p>
-      <nav class="navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </nav>
+      <div class="left-container" style="display: none;">
+        <img src="images/AustinBarnes.JPG" alt="Photo of Austin" class="profile-photo">
+        <p class="website-name">Austin's Website</p>
+        <nav class="navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
     </div>
     <div class="content">
+      <div class="header">
+        <h1>Welcome!</h1>
+        <p>Here are some of the projects I have worked on. Click the buttons below to see more information about them.<br>
+          If you have any questions, please feel free to contact me through the contact page. Thank you!
+        </p>
+      </div>
+      <div class="divider0"></div>
       <div class="project-list">
-        <a href="https://github.com/co1424/adventurers-guild" class="project-link" target="_blank">Code Catacombs</a>
-        <a href="https://auzfest.github.io/Elder-Barnes-Photos-and-Emails-Website/" class="project-link" target="_blank">Missionary Website</a>
-        <a href="https://auzfest.github.io/DrawingWebPage/" class="project-link" target="_blank">Drawing Website</a>
-        <a href="https://auzfest.github.io/Quiz-Website/" class="project-link" target="_blank">Quiz Website</a>
-        <a href="https://github.com/Auzfest/apollo11sim" class="project-link" target="_blank">Apollo 11 Sim</a>
-        <a href="https://github.com/Auzfest/M777-Simulator" class="project-link" target="_blank">M77 Sim</a>
-        <a href="https://play.unity.com/mg/other/myfirstunitygame-78" class="project-link" target="_blank">Flame Hero</a>
-
+        <div id="webDev">
+          <h1>Web Development Projects</h1>
+          <h3>Click the button below to see the projects</h3>
+          <div id="toggle-button" onclick="toggleBox()">🔴</div>
+        </div>
+          <section id="drop-list">
+            <div class="drop-container">
+            <div id="toggle-button" onclick="toggleBox()">❌</div>
+            <div class="WebProject">
+              <h1>DreamBox</h1>
+              <h2>Due to confedentiality reasons this project is not available to the public yet.</h2>
+              <p>The Web Development and Design Society at BYU-I has taken the task to remake DreamBox's Wix website. 
+                A local selfie studio that offers a variety of backdrops and props for photo shoots.
+                We are recreating the website using Next.js, TypeScript and Tailwind to provide a better experience for the users and owners.
+                This project is still in progress but feel free to see their Wix site for an idea of what it looks like.
+              </p>
+              <a href="https://www.dreamboxrexburg.com/" class="project-link" target="_blank">DreamBox Current Site</a>
+            </div>
+            <div class="WebProject">
+              <h1>Soccer Statistics Website</h1>
+              <p>A continuing passion project showing soccer statistics for professional soccer leagues across the world.
+                Using Football_API anyone can find any league, any team and any player to see their statistics of the latest seasons with this website.
+                This project is still in progress. With a backend database in the works to make accounts and easily see your favorite leagues, teams and players.
+              </p>
+              <a href="https://auzfest.github.io/soccerWeb/" class="project-link" target="_blank">Soccer Stats Website</a>
+              <a href="https://github.com/Auzfest/soccerWeb" class="project-link" target="_blank">Soccer Stats Website Repository</a>
+            </div>
+            <div class="WebProject">
+                <h1>Mission Portfolio</h1>
+                <p>A website built for my brother to record and store memories of his LDS mission. There you can find emails and photos of his time in Ohio.</p>
+                <a href="https://auzfest.github.io/Elder-Barnes-Photos-and-Emails-Website/" class="project-link" target="_blank">Missionary Website</a>
+                <a href="https://github.com/Auzfest/Elder-Barnes-Photos-and-Emails-Website" class="project-link" target="_blank">Missionary Website Repository</a>
+            </div>
+            <div class="WebProject">
+              <h1>Javascript Games</h1>
+              <p>A collection of Javascript games. Find a fun platformer shooter along with a endless top-down shooter!</p>
+              <a href="https://auzfest.github.io/JS-Shooter/" class="project-link" target="_blank">Javascript Games Site</a>
+              <a href="https://github.com/Auzfest/JS-Shooter" class="project-link" target="_blank">Javascript Games Repository</a>
+            </div>
+            <div class="WebProject">
+              <h1>Drawing Website</h1>
+              <p>This site allows you to draw to your heart's content! Pick different colors and sizes to draw your imagination!
+                When your finished with your creation you can save it as a PNG image to keep forever!
+              </p>
+              <a href="https://auzfest.github.io/DrawingWebPage/" class="project-link" target="_blank">Drawing Website</a>
+              <a href="https://github.com/Auzfest/DrawingWebPage" class="project-link" target="_blank">Drawing Website Repository</a>
+            </div>
+            <div class="WebProject">
+              <h1>Quiz Website</h1>
+              <p>A collection of Quizzes about me and the things I am passionate about. Hope you know your Star Wars and Premier League histories!</p>
+              <a href="https://auzfest.github.io/Quiz-Website/" class="project-link" target="_blank">Quiz Website</a>
+              <a href="https://github.com/Auzfest/Quiz-Website" class="project-link" target="_blank">Quiz Website Repository</a>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <div id="OtherProjects">
+          <h1>Other Projects</h1>
+          <p>NOTE: only repositories are available</p>
+          <div id="toggle-button" onclick="toggleBox2()">🔴</div>
+        </div>
+        <div id="drop-list2">
+          <div id="toggle-button" onclick="toggleBox2()">❌</div>
+          <a href="https://github.com/co1424/adventurers-guild" class="project-link" target="_blank">Code Catacombs</a>
+          <a href="https://github.com/Auzfest/apollo11sim" class="project-link" target="_blank">Apollo 11 Sim</a>
+          <a href="https://github.com/Auzfest/M777-Simulator" class="project-link" target="_blank">M77 Sim</a>
+          <a href="https://play.unity.com/mg/other/myfirstunitygame-78" class="project-link" target="_blank">Flame Hero</a>
+        </div>
+        <div class="divider0"></div>
       </div>
     </div>
   </div>

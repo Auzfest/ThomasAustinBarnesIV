@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px)
+@media screen and (min-width: 600px)
 {
     #menu {
         display: none;
@@ -7,6 +7,10 @@
     .left-bar {
         display: block;
         width: 200px;
+        background: black;
+        position: relative;
+        padding: 1%;
+        border-right: red solid 5px;
         background: black;
         position: relative;
     }
@@ -27,4 +31,15 @@
     .aboutcontent h1 {
         width: 20rem;
     }
+
+    .WebProject p {
+        font-size: 25px;
+      }
+
+    .project-link {
+        width: 20%;
+        padding: 0.5rem;
+        margin-top: 2%;
+    }
+
 }
